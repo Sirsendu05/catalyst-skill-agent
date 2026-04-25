@@ -31,7 +31,7 @@ def call_llm(prompt, max_tokens=2000):
     client = get_client()
     try:
         response = client.chat.completions.create(
-            model="llama3-70b-8192",
+            model="llama-3.3-70b-versatile",
             max_tokens=max_tokens,
             messages=[{"role": "user", "content": prompt}]
         )
