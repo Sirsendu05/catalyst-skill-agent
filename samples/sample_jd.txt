@@ -1,0 +1,16 @@
+Software Engineer — Data Platform
+Company: TechStartup Inc.
+
+We are looking for a Software Engineer to join our Data Platform team.
+
+Required Skills:
+- Python (4+ years): Building data pipelines, ETL workflows
+- SQL (intermediate): Query optimization, database design  
+- Docker: Containerizing applications, writing Dockerfiles
+- REST APIs: Designing and consuming APIs
+- Git: Version control, branching strategies
+
+Nice to have:
+- Airflow or similar orchestration tools
+- AWS or GCP experience
+- Communication skills for cross-team collaboration
