@@ -26,6 +26,7 @@ learning plan with curated resources and time estimates.
 4. Conversational Assessment — 2-4 adaptive questions per skill via Claude
 5. Scoring + Gap Analysis — 0-10 scores weighted by JD importance
 6. Learning Plan — curated free resources with time estimates per skill gap
+<img width="705" height="544" alt="ArchitectureDiagram" src="https://github.com/user-attachments/assets/a0cac889-1f1b-4d21-a296-1d980c7b26b9" />
 
 ## Scoring Logic
 - Each skill scored 0-10 by the assessment agent
