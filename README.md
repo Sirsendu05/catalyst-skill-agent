@@ -1,4 +1,4 @@
-<img width="1105" height="941" alt="Screenshot 2026-04-26 001710" src="https://github.com/user-attachments/assets/d642966d-2ee3-4762-9ee6-e72a573757a0" />
+
 # SkillSense — AI-Powered Skill Assessment Agent
 
 ## What it does
@@ -27,7 +27,7 @@ learning plan with curated resources and time estimates.
 4. Conversational Assessment — 2-4 adaptive questions per skill via Claude
 5. Scoring + Gap Analysis — 0-10 scores weighted by JD importance
 6. Learning Plan — curated free resources with time estimates per skill gap
-
+<img width="1105" height="941" alt="Screenshot 2026-04-26 001710" src="https://github.com/user-attachments/assets/d642966d-2ee3-4762-9ee6-e72a573757a0" />
 
 ## Scoring Logic
 - Each skill scored 0-10 by the assessment agent
