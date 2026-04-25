@@ -1,3 +1,4 @@
+<img width="1105" height="941" alt="Screenshot 2026-04-26 001710" src="https://github.com/user-attachments/assets/d642966d-2ee3-4762-9ee6-e72a573757a0" />
 # SkillSense — AI-Powered Skill Assessment Agent
 
 ## What it does
