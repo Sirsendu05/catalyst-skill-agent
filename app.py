@@ -27,13 +27,14 @@ def get_client():
         st.stop()
     return Groq(api_key=api_key)
 
-def call_llm(prompt, max_tokens=2000):
+def call_llm(prompt, max_tokens=2000, messages=None):
     client = get_client()
     try:
+        msgs = messages if messages else [{"role": "user", "content": prompt}]
         response = client.chat.completions.create(
             model="llama-3.3-70b-versatile",
             max_tokens=max_tokens,
-            messages=[{"role": "user", "content": prompt}]
+            messages=msgs
         )
         return response.choices[0].message.content
     except Exception as e:
