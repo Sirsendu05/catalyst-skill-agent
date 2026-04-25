@@ -8,7 +8,7 @@ on each required skill. It identifies gaps and generates a personalised
 learning plan with curated resources and time estimates.
 
 ## Live Demo
-[Add your Streamlit URL here after deploying]
+https://catalyst-skill-agent-a8kzfvtavsfhxzdmlcyeyw.streamlit.app/
 
 ## Demo Video
 [Add your Loom video link here]
