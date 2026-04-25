@@ -1,0 +1,10 @@
+John Doe | john@email.com
+
+EXPERIENCE
+Senior Data Engineer — OldCorp (2021–2024)
+- Built Python ETL pipelines processing 10M records/day
+- Wrote complex SQL queries for reporting dashboards
+- Used Docker to containerize 3 microservices
+- Developed REST APIs in FastAPI
+
+SKILLS: Python, SQL, Docker, FastAPI, Git, Pandas, Spark
