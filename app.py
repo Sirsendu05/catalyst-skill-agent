@@ -310,13 +310,14 @@ def start_assessment():
 def handle_answer(answer):
     st.session_state.conv_history.append({"role": "user", "content": answer})
     st.session_state.chat_display.append({"role": "user", "content": answer})
-    prompt = fill(ASSESSOR_PROMPT,
+  system_prompt = fill(ASSESSOR_PROMPT,
                   JOB_TITLE=st.session_state.job_title,
                   CURRENT_SKILL=st.session_state.current_skill,
                   CLAIMED_LEVEL=get_claimed_level(st.session_state.current_skill),
-                  CONVERSATION_HISTORY=format_history(st.session_state.conv_history))
+                  CONVERSATION_HISTORY="")
+    msgs = [{"role": "system", "content": system_prompt}] + st.session_state.conv_history
     with st.spinner("SkillSense is thinking..."):
-        response = call_llm(prompt, max_tokens=500)
+        response = call_llm("", max_tokens=500, messages=msgs)
     if "ASSESSMENT_COMPLETE" in response:
         parts = response.split("ASSESSMENT_COMPLETE", 1)
         closing_text = parts[0].strip()
