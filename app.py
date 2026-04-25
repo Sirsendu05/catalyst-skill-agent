@@ -301,8 +301,15 @@ def start_assessment():
                   CURRENT_SKILL=skill,
                   CLAIMED_LEVEL=get_claimed_level(skill),
                   CONVERSATION_HISTORY=format_history([]))
+   system_prompt = fill(ASSESSOR_PROMPT,
+                  JOB_TITLE=st.session_state.job_title,
+                  CURRENT_SKILL=skill,
+                  CLAIMED_LEVEL=get_claimed_level(skill),
+                  CONVERSATION_HISTORY="")
+    msgs = [{"role": "system", "content": system_prompt},
+            {"role": "user", "content": f"Please begin the assessment for {skill}."}]
     with st.spinner(f"Starting assessment for {skill}..."):
-        first_q = call_llm(prompt, max_tokens=400)
+        first_q = call_llm("", max_tokens=400, messages=msgs)
     st.session_state.conv_history.append({"role": "assistant", "content": first_q})
     st.session_state.chat_display.append({"role": "assistant", "content": first_q})
     st.rerun()
