@@ -11,7 +11,7 @@ learning plan with curated resources and time estimates.
 https://catalyst-skill-agent-a8kzfvtavsfhxzdmlcyeyw.streamlit.app/
 
 ## Demo Video
-[Add your Loom video link here]
+https://drive.google.com/file/d/1mLQ5_3cw4LQKrjWfmFNOCuKltfbYnDYT/view?usp=sharing
 
 ## How to run locally
 1. Clone this repo
